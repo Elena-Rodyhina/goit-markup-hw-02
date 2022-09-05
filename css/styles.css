@@ -1,3 +1,270 @@
-* {
-    font: ;
+:root {
+  --accent: #2196f3;
+  --accentt: #000000;
+  --col-htext: #212121;
+  --col-text: #757575;
+  --col-fon: #ffffff;
+}
+body {
+  width: 1600px;
+  font-family: "Roboto", "Verdana", sans-serif;
+  letter-spacing: 3%;
+  color: var(--col-text);
+  background-color: var(--col-fon);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*логотип*/
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 900;
+  text-decoration: none;
+}
+.web {
+  color: var(--accent);
+}
+.studio {
+  color: var(--accentt);
+}
+
+/* container */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0;
+}
+
+.logo {
+  margin-right: 43px;
+}
+
+/* navig */
+.navig {
+  display: flex;
+}
+/* выполняется с последнего элемента к первому - убирает крайнюю геометрию - слева) */
+.navig .item-nav + .item-nav {
+  margin-left: 50px;
+}
+.navig .link {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.autor {
+  display: flex;
+  margin-left: auto;
+}
+.autor .item-nav + .item-nav {
+  margin-left: 50px;
+}
+/*шапка*/
+.shapka {
+  display: block;
+  text-align: center;
+  width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  background-color: #2f303a;
+}
+h1 {
+  width: 696px;
+  margin: auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 6%;
+
+  color: var(--col-fon);
+}
+/*кнопкa*/
+.button {
+  min-width: 216px;
+  height: 50px;
+  padding: 10px 32px;
+  color: var(--accent2);
+  background-color: var(--col-fon);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 6%;
+}
+button:hover,
+button:focus {
+  cursor: pointer;
+  color: var(--col-fon);
+  background-color: var(--accent);
+}
+
+/* H2 */
+.title {
+  color: var(--col-htext);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* section */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.item + .item {
+  margin-left: 30px;
+}
+
+/*criter*/
+.criter {
+  display: flex;
+  justify-content: space-between;
+}
+.criter .item {
+  display: block;
+  width: 270px;
+}
+.criter .text-cr {
+  display: block;
+
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--col-text);
+}
+
+/*work*/
+.work {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* team */
+.work.team {
+  display: block;
+}
+.team.if-work,
+.team.prof-work {
+  text-align: center;
+}
+.if-work {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: center;
+  color: var(--col-htext);
+}
+.prof-work {
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--col-text);
+}
+
+/* footer */
+.footer {
+  display: block;
+  width: 1600px;
+  height: 252px;
+  padding-top: 60px;
+  margin-bottom: 0;
+  background-color: #2f303a;
+}
+
+.footer .container .studio {
+  color: var(--col-fon);
+}
+.rekvizity {
+  display: block;
+  width: 231px;
+  padding-top: 20px;
+  padding-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 3%;
+}
+.color-addr {
+  color: var(--col-fon);
+}
+.color-mail {
+  color: var(--col-fon) 60%;
+}
+
+/* портфолио - проект */
+.projekt .if-projekt {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 6%;
+  color: var(--col-htext);
+}
+.projekt .wo-projekt {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 3%;
+  color: var(--col-text);
+}
+
+/* filtr */
+.filtr {
+  display: flex;
+  justify-content: space-between;
+  width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.button-filtr {
+  padding: 6px 22px;
+  color: var(--accent2);
+  background-color: var(--col-fon);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 3%;
+  text-align: center;
+}
+.button-filtr:hover,
+.button-filtr:focus {
+  cursor: pointer;
+  color: var(--col-fon);
+  background-color: var(--accent);
+}
+
+/* projekt */
+.projekt {
+  display: flex;
+  flex-wrap: wrap;
+}
+.exampl {
+  display: block;
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom-width: 1px;
+  border-bottom-color: #eeeeee;
+}
+.exampl:nth-child(3n) {
+  margin-right: 0;
+}
+.exampl:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
